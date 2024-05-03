@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfsi8xyhx4t43"]
+
+[ext_resource type="Script" path="res://final_score.gd" id="1_bp22c"]
+
+[node name="Loss" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 498.0
+offset_bottom = 790.0
+color = Color(1, 0.00784314, 0, 1)
+
+[node name="lost" type="Label" parent="."]
+layout_mode = 0
+offset_left = 142.0
+offset_top = 252.0
+offset_right = 362.0
+offset_bottom = 324.0
+theme_override_font_sizes/font_size = 40
+text = "YOU LOST"
+
+[node name="final_score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 126.0
+offset_top = 329.0
+offset_right = 315.0
+offset_bottom = 384.0
+theme_override_font_sizes/font_size = 40
+script = ExtResource("1_bp22c")
